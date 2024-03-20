@@ -1,3 +1,7 @@
 export default function Watch() {
-  return <div>Enter</div>
+  return (
+    <div>
+      <h2>horloge</h2>
+    </div>
+  );
 }
