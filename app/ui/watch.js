@@ -15,7 +15,7 @@ export default function Watch() {
   }, [])
 
   return (
-    <div>
+    <div className="shortBox box">
       <h2>Horloge</h2>
       <h3>{date.getHours()} </h3>
       <h3>
