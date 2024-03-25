@@ -1,5 +1,5 @@
 "use client"
-
+import styles from "./watch.module.css"
 import { useEffect, useState } from "react"
 
 export default function Watch() {
@@ -16,13 +16,15 @@ export default function Watch() {
 
   return (
     <div className="shortBox box">
-      <h2>Horloge</h2>
-      <h3>{date.getHours()} </h3>
-      <h3>
-        {date.getMinutes() > 10
-          ? date.getMinutes().toString()
-          : "0" + date.getMinutes().toString()}
-      </h3>
+      <div className={styles.watch}>
+        <h3 className={styles.hours}>{date.getHours()} </h3>
+        <div className={styles.bar}></div>
+        <h3 className={styles.minutes}>
+          {date.getMinutes() > 9
+            ? date.getMinutes().toString()
+            : "0" + date.getMinutes().toString()}
+        </h3>
+      </div>
     </div>
   )
 }

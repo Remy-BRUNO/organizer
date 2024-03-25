@@ -1,3 +1,22 @@
+// "use client"
+
+import styles from "./agenda.module.css"
+
 export default function Agenda() {
-  return <div className="mediumBox box">Agenda</div>
+  const today = new Date()
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }
+  const formatter = new Intl.DateTimeFormat("fr-FR", options)
+  const dateFormat = formatter.format(today)
+
+  console.log(dateFormat)
+  return (
+    <div className="mediumBox box">
+      <h2>{dateFormat}</h2>
+    </div>
+  )
 }

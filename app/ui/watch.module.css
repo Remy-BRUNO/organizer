@@ -1,0 +1,22 @@
+.watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.hours {
+  font-size: 96px;
+  color: white;
+  margin: 0;
+}
+.minutes {
+  margin: 0;
+  font-size: 96px;
+  color: #daff71;
+}
+.bar {
+  width: 160px;
+  height: 8px;
+  background-color: black;
+}
