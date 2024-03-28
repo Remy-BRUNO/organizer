@@ -1,18 +1,18 @@
-"use client"
-import styles from "./watch.module.css"
-import { useEffect, useState } from "react"
+"use client";
+import styles from "./watch.module.css";
+import { useEffect, useState } from "react";
 
 export default function Watch() {
-  const [date, setDate] = useState(new Date())
+  const [date, setDate] = useState(new Date());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setDate(new Date())
-    }, 1000)
+      setDate(new Date());
+    }, 1000);
     return () => {
-      clearInterval(timer)
-    }
-  }, [])
+      clearInterval(timer);
+    };
+  }, []);
 
   return (
     <div className="shortBox box">
@@ -26,5 +26,5 @@ export default function Watch() {
         </h3>
       </div>
     </div>
-  )
+  );
 }
