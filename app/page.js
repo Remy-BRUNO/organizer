@@ -7,6 +7,7 @@ import Agenda from "./ui/agenda";
 import Note from "./ui/note";
 import Lofi from "./ui/lofi";
 import ToDoListe from "./ui/toDoListe";
+import Chrono from "./ui/chrono";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Watch />
       <Agenda />
       <Note />
+      <Chrono />
       <Lofi />
       <ToDoListe />
     </main>
