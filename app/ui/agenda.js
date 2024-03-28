@@ -13,7 +13,6 @@ export default function Agenda() {
   const formatter = new Intl.DateTimeFormat("fr-FR", options)
   const dateFormat = formatter.format(today)
 
-  console.log(dateFormat)
   return (
     <div className="mediumBox box">
       <h2>{dateFormat}</h2>
